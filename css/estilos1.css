@@ -1,1 +1,70 @@
+body{
+  margin: 1em;
+  background: black;
+  font-family: 'Dancing Script', cursive;
+}
 
+header
+{
+  display: flex;
+	margin: 0 auto;
+	height: 10px;
+	padding-top: 1em;
+	padding-bottom: 2em;
+  background-color: #5b7989;
+	color:white;
+  border-radius: 10px 10px 0px 0px;
+  flex-flow: row;
+}
+
+.nombrepag{
+    font-size: 25px;
+    text-shadow: 2px 1px #02010a;
+    width: 50%;
+}
+
+.navegador{
+  width: 50%;
+  display: flex;
+  flex-flow: wrap;
+}
+
+.navegador1>a {
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+  padding: 2em;
+}
+
+.navegador2>a {
+  text-decoration: underline;
+  font-size: 20px;
+  color: white;
+  padding: 2em;
+}
+
+.navegador3>a {
+  text-decoration: underline;
+  font-size: 20px;
+  color: white;
+  padding: 2em;
+}
+
+
+footer{
+
+  margin: 0 auto;
+  height: 100px;
+  padding-top: 1em;
+  padding-bottom: 2em;
+  background-color: #C6d5c5;
+  color:black;
+  border-radius: 0px 0px 10px 10px;
+  display: flex;
+  flex-flow: row;
+}
+
+.contacto>ul>a{
+  text-decoration: none;
+  color: black;
+}
