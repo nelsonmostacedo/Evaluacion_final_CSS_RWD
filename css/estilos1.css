@@ -1,14 +1,28 @@
-body{
-  margin: 1em;
-  background: black;
-  font-family: 'Dancing Script', cursive;
+@-webkit-keyframes entrada {
+    0%{
+      margin-top: 150%;
+    }
+    60%{
+      margin-top: -5%;
+    }
+    100%{
+      margin-top: 0%
+    }
 }
 
-header
-{
+body{
+  margin: 1em auto;
+  background: black;
+  font-family: 'Dancing Script';
+  max-width: 900px;
+}
+
+header{
+  animation: entrada 1s;
   display: flex;
 	margin: 0 auto;
 	height: 10px;
+  padding-left: 1em;
 	padding-top: 1em;
 	padding-bottom: 2em;
   background-color: #5b7989;
@@ -50,9 +64,59 @@ header
   padding: 2em;
 }
 
+#wrapper
+{
+	width: 100%;
+	margin: 0 auto;
+}
+
+section>article{
+	box-sizing: border-box;
+	float:left;
+	height: auto;
+	background-color: grey;
+	padding: 2%;
+	text-align: center;
+
+}
+
+section>article>a{
+  font-size: 20px;
+  color: black
+}
+
+#central	{
+	background-color: #82c3a6;
+	width: 100%;
+
+}
+
+#fotolago1 {
+  width: 90%;
+}
+
+#secundaria1	{
+	background-color: #d5c75f;
+	width: 50%;
+}
+
+#fotopaisajemain{
+  width: 90%;
+}
+
+#secundaria2	{
+	background-color: #d5c75f;
+	width: 50%;
+}
+
+#fotoretratomain{
+  width: 90%;
+  vertical-align: bottom;
+}
 
 footer{
-  font-size: 20px;
+  font-size: 15px;
+  width: 100%;
   height: auto;
   padding-bottom: 1em;
   background-color: #C6d5c5;
@@ -63,11 +127,11 @@ footer{
 }
 
 .footer>div>p{
-  font-size: 30px;
+  font-size: 15px;
 }
 
 .footer>div>a{
-  font-size: 30px;
+  font-size: 15px;
 }
 
 .contacto{
@@ -81,7 +145,6 @@ footer{
   color: black;
 
 }
-
 
 .terminos{
   width: 25%;
