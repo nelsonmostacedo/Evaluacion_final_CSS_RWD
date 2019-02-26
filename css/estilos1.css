@@ -52,11 +52,9 @@ header
 
 
 footer{
-
-  margin: 0 auto;
-  height: 100px;
-  padding-top: 1em;
-  padding-bottom: 2em;
+  font-size: 20px;
+  height: auto;
+  padding-bottom: 1em;
   background-color: #C6d5c5;
   color:black;
   border-radius: 0px 0px 10px 10px;
@@ -64,7 +62,62 @@ footer{
   flex-flow: row;
 }
 
-.contacto>ul>a{
+.footer>div>p{
+  font-size: 30px;
+}
+
+.footer>div>a{
+  font-size: 30px;
+}
+
+.contacto{
+  text-align: left;
+  width: 25%;
+  padding: 1em;
+}
+
+.contacto>p>a{
   text-decoration: none;
   color: black;
+
+}
+
+
+.terminos{
+  width: 25%;
+  padding: 1em;
+}
+
+.terminos>a{
+  text-decoration: none;
+  color: black;
+
+}
+
+.rrss{
+  width: 25%;
+  padding: 1em;
+}
+
+.rrss>a{
+  text-decoration: none;
+  color: black;
+
+}
+
+#logofb{
+  transform: translateY(10px);
+}
+
+#logoinsta{
+  transform: translateY(10px);
+}
+
+#logotwit{
+  transform: translateY(10px);
+}
+
+.derechos{
+  width: 25%;
+  padding: 1em;
 }
