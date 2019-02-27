@@ -66,6 +66,52 @@ header{
   width: 25%;
 }
 
+#galeria{
+  width: 100%;
+  height: auto;
+  background-color: #d5c75f;
+  display: flex;
+  flex-flow: wrap;
+
+}
+
+#galeria1{
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-flow: nowrap;
+}
+
+#galeria2{
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-flow: nowrap;
+}
+
+#pic1, #pic2, #pic3, #pic4, #pic5, #pic6 {
+  height: auto;
+  width: 30%;
+  padding: 1em;
+}
+
+#fotoblur, #fotogris1, #fotosepia, #fotogris2, #foto, #fotogris3 {
+  width: 100%;
+}
+
+#fotoblur{
+  -webkit-filter:blur(10px);
+  filter:blur(10px);
+}
+
+#fotogris1, #fotogris2, #fotogris3{
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+}
+
+#fotosepia{
+  filter: sepia(90%);
+}
 
 footer{
   font-size: 18px;
@@ -136,4 +182,42 @@ footer{
 #derechos{
   width: 100%;
   padding: 1em;
+}
+
+@media screen and (max-width: 900px)  {
+  header{
+    flex-flow: wrap;
+  }
+  #nombrepag{
+    text-align: center;
+    width: 100%;
+  }
+  #navegador{
+    justify-content: center;
+    width: 100%;
+  }
+
+  #galeria1, #galeria2{
+    flex-flow: wrap;
+  }
+
+  #pic1, #pic2, #pic3, #pic4, #pic5, #pic6{
+    width: 100%;
+  }
+
+  footer{
+    flex-flow: wrap;
+  }
+  #contacto {
+    width: 100%;
+  }
+  #terminos {
+    width: 100%;
+  }
+  #rrss {
+    width: 100%;
+  }
+  #derechos {
+    width: 100%;
+  }
 }
