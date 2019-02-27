@@ -32,19 +32,19 @@ header{
   flex-flow: nowrap;
 }
 
-.nombrepag{
+#nombrepag{
     font-size: 25px;
     text-shadow: 2px 1px #02010a;
     width: 50%;
 }
 
-.navegador{
+#navegador{
   width: 50%;
   display: flex;
   flex-flow: row;
 }
 
-.navegador1>a {
+#navegador1>a {
   text-decoration: none;
   font-size: 20px;
   color: white;
@@ -52,26 +52,18 @@ header{
   width: 25%;
 }
 
-.navegador2>a {
-  text-decoration: underline;
+#navegador2>a {
   font-size: 20px;
   color: white;
   padding: 2em;
   width: 25%;
 }
 
-.navegador3>a {
-  text-decoration: underline;
+#navegador3>a {
   font-size: 20px;
   color: white;
   padding: 2em;
   width: 25%;
-}
-
-#wrapper
-{
-	width: 100%;
-	margin: 0 auto;
 }
 
 section>article{
@@ -222,11 +214,11 @@ footer{
   header{
     flex-flow: wrap;
   }
-  .nombrepag{
+  #nombrepag{
     text-align: center;
     width: 100%;
   }
-  .navegador{
+  #navegador{
     text-align: center;
     width: 100%;
   }
