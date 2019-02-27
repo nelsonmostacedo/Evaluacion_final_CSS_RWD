@@ -19,16 +19,17 @@ body{
 
 header{
   animation: entrada 1s;
-  display: flex;
 	margin: 0 auto;
-	height: 10px;
-  padding-left: 1em;
-	padding-top: 1em;
-	padding-bottom: 2em;
+	height: auto;
+  padding: 1em;
+  width: 100%;
   background-color: #5b7989;
 	color:white;
   border-radius: 10px 10px 0px 0px;
-  flex-flow: row;
+  box-sizing: border-box;
+  float:left;
+  display: flex;
+  flex-flow: nowrap;
 }
 
 .nombrepag{
@@ -40,7 +41,7 @@ header{
 .navegador{
   width: 50%;
   display: flex;
-  flex-flow: wrap;
+  flex-flow: row;
 }
 
 .navegador1>a {
@@ -48,6 +49,7 @@ header{
   font-size: 20px;
   color: white;
   padding: 2em;
+  width: 25%;
 }
 
 .navegador2>a {
@@ -55,6 +57,7 @@ header{
   font-size: 20px;
   color: white;
   padding: 2em;
+  width: 25%;
 }
 
 .navegador3>a {
@@ -62,6 +65,7 @@ header{
   font-size: 20px;
   color: white;
   padding: 2em;
+  width: 25%;
 }
 
 #wrapper
@@ -71,13 +75,12 @@ header{
 }
 
 section>article{
-	box-sizing: border-box;
+  box-sizing: border-box;
 	float:left;
 	height: auto;
 	background-color: grey;
 	padding: 2%;
 	text-align: center;
-
 }
 
 section>article>a{
@@ -85,10 +88,17 @@ section>article>a{
   color: black
 }
 
+article>img{
+  filter: drop-shadow(2px 2px 2px #02010a);
+}
+
+article>a>img{
+  filter: drop-shadow(2px 2px 2px #02010a);
+}
+
 #central	{
 	background-color: #82c3a6;
 	width: 100%;
-
 }
 
 #fotolago1 {
@@ -101,7 +111,25 @@ section>article>a{
 }
 
 #fotopaisajemain{
+  border: 1px solid black;
   width: 90%;
+}
+
+@-webkit-keyframes fotopaisaje {
+  0%{transform: rotate(0deg);
+  }
+  25%{transform: rotate(10deg);
+  }
+  50%{transform: rotate(0deg);
+  }
+  75%{transform: rotate(-10deg);
+  }
+  100%{transform: rotate(0deg);
+  }
+}
+
+#fotopaisajemain:hover{
+  animation: fotopaisaje 1s infinite;
 }
 
 #secundaria2	{
@@ -111,12 +139,16 @@ section>article>a{
 }
 
 #fotoretratomain{
+  border: 1px solid black;
   width: 90%;
-  vertical-align: bottom;
+}
+
+#fotoretratomain:hover{
+  transform: translate(20px, -5px);
 }
 
 footer{
-  font-size: 15px;
+  font-size: 18px;
   width: 100%;
   height: auto;
   padding-bottom: 1em;
@@ -124,46 +156,46 @@ footer{
   color:black;
   border-radius: 0px 0px 10px 10px;
   display: flex;
-  flex-flow: row;
+  flex-flow: nowrap;
 }
 
 .footer>div>p{
   font-size: 15px;
 }
 
-.footer>div>a{
-  font-size: 15px;
+.footer>article>a{
+  font-size: 20px;
 }
 
-.contacto{
+#contacto{
   text-align: left;
-  width: 25%;
+  width: 100%;
   padding: 1em;
 }
 
-.contacto>p>a{
+#contacto>p>a{
   text-decoration: none;
   color: black;
 
 }
 
-.terminos{
-  width: 25%;
+#terminos{
+  width: 100%;
   padding: 1em;
 }
 
-.terminos>a{
+#terminos>a{
   text-decoration: none;
   color: black;
 
 }
 
-.rrss{
-  width: 25%;
+#rrss{
+  width: 100%;
   padding: 1em;
 }
 
-.rrss>a{
+#rrss>a{
   text-decoration: none;
   color: black;
 
@@ -181,7 +213,44 @@ footer{
   transform: translateY(10px);
 }
 
-.derechos{
-  width: 25%;
+#derechos{
+  width: 100%;
   padding: 1em;
+}
+
+@media screen and (max-width: 900px)  {
+  header{
+    flex-flow: wrap;
+  }
+  .nombrepag{
+    text-align: center;
+    width: 100%;
+  }
+  .navegador{
+    text-align: center;
+    width: 100%;
+  }
+
+  #secundaria1 {
+    width: 100%;
+  }
+
+  #secundaria2 {
+    width: 100%;
+  }
+  footer{
+    flex-flow: wrap;
+  }
+  #contacto {
+    width: 100%;
+  }
+  #terminos {
+    width: 100%;
+  }
+  #rrss {
+    width: 100%;
+  }
+  #derechos {
+    width: 100%;
+  }
 }
