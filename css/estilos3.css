@@ -1,0 +1,223 @@
+@-webkit-keyframes entrada {
+    0%{
+      margin-top: 150%;
+    }
+    60%{
+      margin-top: -5%;
+    }
+    100%{
+      margin-top: 0%
+    }
+}
+
+body{
+  margin: 1em auto;
+  background: black;
+  font-family: 'Dancing Script';
+  max-width: 900px;
+}
+
+header{
+  animation: entrada 1s;
+	margin: 0 auto;
+	height: auto;
+  padding: 1em;
+  width: 100%;
+  background-color: #5b7989;
+	color:white;
+  border-radius: 10px 10px 0px 0px;
+  box-sizing: border-box;
+  float:left;
+  display: flex;
+  flex-flow: nowrap;
+}
+
+#nombrepag{
+    font-size: 25px;
+    text-shadow: 2px 1px #02010a;
+    width: 50%;
+}
+
+#navegador{
+  width: 50%;
+  display: flex;
+  flex-flow: row;
+}
+
+#navegador1>a {
+  font-size: 20px;
+  color: white;
+  padding: 2em;
+  width: 25%;
+}
+
+#navegador2>a {
+  font-size: 20px;
+  color: white;
+  padding: 2em;
+  width: 25%;
+}
+
+#navegador3>a {
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+  padding: 2em;
+  width: 25%;
+}
+
+#galeria{
+  width: 100%;
+  height: auto;
+  background-color: #d5c75f;
+  display: flex;
+  flex-flow: wrap;
+
+}
+
+#galeria1{
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-flow: nowrap;
+}
+
+#galeria2{
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-flow: nowrap;
+}
+
+#pic1, #pic2, #pic3, #pic4, #pic5, #pic6 {
+  height: auto;
+  width: 30%;
+  padding: 1em;
+}
+
+#fotoblur, #fotogris1, #fotosepia, #fotogris2, #foto, #fotogris3 {
+  width: 100%;
+}
+
+#fotoblur{
+  -webkit-filter:blur(10px);
+  filter:blur(10px);
+}
+
+#fotogris1, #fotogris2, #fotogris3{
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+}
+
+#fotosepia{
+  filter: sepia(90%);
+}
+
+footer{
+  font-size: 18px;
+  width: 100%;
+  height: auto;
+  padding-bottom: 1em;
+  background-color: #C6d5c5;
+  color:black;
+  border-radius: 0px 0px 10px 10px;
+  display: flex;
+  flex-flow: nowrap;
+}
+
+.footer>div>p{
+  font-size: 15px;
+}
+
+.footer>article>a{
+  font-size: 20px;
+}
+
+#contacto{
+  text-align: left;
+  width: 100%;
+  padding: 1em;
+}
+
+#contacto>p>a{
+  text-decoration: none;
+  color: black;
+
+}
+
+#terminos{
+  width: 100%;
+  padding: 1em;
+}
+
+#terminos>a{
+  text-decoration: none;
+  color: black;
+
+}
+
+#rrss{
+  width: 100%;
+  padding: 1em;
+}
+
+#rrss>a{
+  text-decoration: none;
+  color: black;
+
+}
+
+#logofb{
+  transform: translateY(10px);
+}
+
+#logoinsta{
+  transform: translateY(10px);
+}
+
+#logotwit{
+  transform: translateY(10px);
+}
+
+#derechos{
+  width: 100%;
+  padding: 1em;
+}
+
+@media screen and (max-width: 900px)  {
+  header{
+    flex-flow: wrap;
+  }
+  #nombrepag{
+    text-align: center;
+    width: 100%;
+  }
+  #navegador{
+    justify-content: center;
+    width: 100%;
+  }
+
+  #galeria1, #galeria2{
+    flex-flow: wrap;
+  }
+
+  #pic1, #pic2, #pic3, #pic4, #pic5, #pic6{
+    width: 100%;
+  }
+
+  footer{
+    flex-flow: wrap;
+  }
+  #contacto {
+    width: 100%;
+  }
+  #terminos {
+    width: 100%;
+  }
+  #rrss {
+    width: 100%;
+  }
+  #derechos {
+    width: 100%;
+  }
+}
