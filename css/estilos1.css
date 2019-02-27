@@ -219,7 +219,7 @@ footer{
     width: 100%;
   }
   #navegador{
-    text-align: center;
+    justify-content: center;
     width: 100%;
   }
 
